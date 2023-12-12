@@ -5,7 +5,7 @@ from config_data.config import Config, load_config
 from handlers import other_handlers, user_handlers
 
 async def main() -> None:
-    config: Config = load_config(".gitignore\\.env")
+    config: Config = load_config(".env")
     
     bot = Bot(token=config.tgbot.token)
     dp = Dispatcher()
